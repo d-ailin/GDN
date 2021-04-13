@@ -26,7 +26,7 @@ Run to check if the environment is ready
 
 
 # Usage
-We use msl dataset(refer to [telemanom](https://github.com/khundman/telemanom)) as demo example. 
+We use part of msl dataset(refer to [telemanom](https://github.com/khundman/telemanom)) as demo example. 
 
 ## Data Preparation
 ```
