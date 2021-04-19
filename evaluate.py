@@ -51,15 +51,13 @@ def get_err_scores(test_res, val_res):
 
     n_err_mid, n_err_iqr = get_err_median_and_iqr(test_predict, test_gt)
 
-    test_delta = np.subtract(
+    test_delta = np.abs(np.subtract(
                         np.array(test_predict).astype(np.float64), 
                         np.array(test_gt).astype(np.float64)
-                    )
+                    ))
     epsilon=1e-2
 
-
     err_scores = (test_delta - n_err_mid) / ( np.abs(n_err_iqr) +epsilon)
-    err_scores = np.abs(err_scores)
 
     smoothed_err_scores = np.zeros(err_scores.shape)
     before_num = 3

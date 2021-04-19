@@ -74,7 +74,7 @@ def eval_mseloss(predicted, ground_truth):
 
 def get_err_median_and_iqr(predicted, groundtruth):
 
-    np_arr = np.subtract(np.array(predicted), np.array(groundtruth))
+    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))
 
     err_median = np.median(np_arr)
     err_iqr = iqr(np_arr)
@@ -83,7 +83,7 @@ def get_err_median_and_iqr(predicted, groundtruth):
 
 def get_err_median_and_quantile(predicted, groundtruth, percentage):
 
-    np_arr = np.subtract(np.array(predicted), np.array(groundtruth))
+    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))
 
     err_median = np.median(np_arr)
     # err_iqr = iqr(np_arr)
@@ -93,7 +93,7 @@ def get_err_median_and_quantile(predicted, groundtruth, percentage):
 
 def get_err_mean_and_quantile(predicted, groundtruth, percentage):
 
-    np_arr = np.subtract(np.array(predicted), np.array(groundtruth))
+    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))
 
     err_median = trim_mean(np_arr, percentage)
     # err_iqr = iqr(np_arr)
@@ -103,7 +103,7 @@ def get_err_mean_and_quantile(predicted, groundtruth, percentage):
 
 def get_err_mean_and_std(predicted, groundtruth):
 
-    np_arr = np.subtract(np.array(predicted), np.array(groundtruth))
+    np_arr = np.abs(np.subtract(np.array(predicted), np.array(groundtruth)))
 
     err_mean = np.mean(np_arr)
     err_std = np.std(np_arr)
