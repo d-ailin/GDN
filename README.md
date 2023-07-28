@@ -1,6 +1,10 @@
 # GDN
 
-Code implementation for : [Graph Neural Network-Based Anomaly Detection in Multivariate Time Series(AAAI'21)](https://arxiv.org/pdf/2106.06947.pdf)
+This repo extends the Code implementation for : [Graph Neural Network-Based Anomaly Detection in Multivariate Time Series(AAAI'21)](https://arxiv.org/pdf/2106.06947.pdf) by including a visualization code for the Figure 3 (left) of the paper. 
+
+Since many users have raised this issue in the original repo, I decided to address it using my own script and sharing it here. 
+
+You can find the visualization script in the Visualization folder. 
 
 
 # Installation
