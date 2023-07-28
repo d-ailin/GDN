@@ -2,6 +2,9 @@
 
 This repo extends the Code implementation for : [Graph Neural Network-Based Anomaly Detection in Multivariate Time Series(AAAI'21)](https://arxiv.org/pdf/2106.06947.pdf) by including a visualization code for the Figure 3 (left) of the paper. 
 
+![image](https://github.com/shahaamirbader/GDN/assets/78397774/28d907b0-b016-47e8-9cbb-9ba0314c6d66)
+
+
 Since many users have raised this issue in the original repo, I decided to address it using my own script and sharing it here. 
 
 You can find the visualization script in the Visualization folder. 
